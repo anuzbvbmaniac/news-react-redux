@@ -1,8 +1,11 @@
 import React from 'react';
 
+import HomePosts from "./home_posts";
+
 const Home = () => {
     return (
         <>
+            <HomePosts />
             <div className="flex flex-col w-0 flex-1 overflow-hidden">
                 <main className="flex-1 relative z-0 overflow-y-auto focus:outline-none" tabIndex={0} data-todo-x-data="" data-todo-x-init="$el.focus()">
                     <div className="py-6">
@@ -162,6 +165,9 @@ const Home = () => {
                                     </div>
 
                                 </div>
+
+
+
                             </div>
                         </div>
                     </div>
