@@ -6,10 +6,12 @@ import 'react-toastify/dist/ReactToastify.min.css'
 
 const MainLayout = (props) => {
     return (
-        <Container className="mt-5 mb-5">
-            {props.children}
-            <ToastContainer/>
-        </Container>
+        <div style={{ minHeight: "640px" }} className="bg-gray-100">
+            <div className="h-screen flex overflow-hidden bg-gray-100" data-todo-x-data="{ sidebarOpen: false }" data-todo-at-keydown-window-escape="sidebarOpen = false">
+                {props.children}
+                <ToastContainer/>
+            </div>
+        </div>
     );
 };
 

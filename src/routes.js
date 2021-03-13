@@ -8,8 +8,8 @@ import MainLayout from "./hoc/main_layout";
 
 const Routes = () => (
     <BrowserRouter>
-        <Header/>
         <MainLayout>
+            <Header/>
             <Switch>
                 <Route patth="/" component={Home}/>
             </Switch>
