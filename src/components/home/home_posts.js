@@ -44,7 +44,7 @@ const HomePosts = () => {
                                     <div className="mt-6 flex items-center">
                                         <div className="flex-shrink-0">
                                             <a href="/">
-                                                <span className="sr-only">Roel Aufderehar</span>
+                                                <span className="sr-only">{item.author}</span>
                                                 <img className="h-10 w-10 rounded-full" src={`https://robohash.org/${item.author}.png`} alt=""/>
                                             </a>
                                         </div>

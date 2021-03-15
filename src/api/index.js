@@ -16,6 +16,16 @@ export const getPosts = async (prevState, page = 1, order = 'asc', limit = 10) =
     }
 }
 
+export const getPostById = async (id) => {
+    try {
+        const response = await axios.get(`${BASE_URL}/posts/${id}`);
+
+        return response.data;
+    } catch (error) {
+        return '404';
+    }
+}
+
 
 /* ---------------------------------------------------------
                        NEWSLETTER
