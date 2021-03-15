@@ -20,7 +20,7 @@ const Header = () => {
                         </div>
                         <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
                             <div className="flex-shrink-0 flex items-center px-4">
-                                <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-300-mark-white-text.svg" alt="Workflow"/>
+                                News Portal
                             </div>
                             <nav className="mt-5 px-2 space-y-1">
 
@@ -77,7 +77,7 @@ const Header = () => {
                     <div className="flex flex-col h-0 flex-1">
                         <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
                             <div className="flex items-center flex-shrink-0 px-4">
-                                <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-300-mark-white-text.svg" alt="Workflow"/>
+                               <span className="text-white font-bold text-2xl uppercase">News Portal</span>
                             </div>
                             <nav className="mt-5 flex-1 px-2 space-y-1">
 
@@ -105,11 +105,11 @@ const Header = () => {
                             <a href="/" className="flex-shrink-0 w-full group block">
                                 <div className="flex items-center">
                                     <div>
-                                        <img className="inline-block h-9 w-9 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt=""/>
+                                        <img className="inline-block h-9 w-9 rounded-full" src="https://lh3.googleusercontent.com/-8_0FPjzPyvk/YAc3CpRFlCI/AAAAAAAAnGY/032IVHMBSG05TE5e4gPKYrR2IIVF53VugCEwYBhgLKtQDAL1OcqxMqUMKMWWT6SMPM1ZJfKxNIxS3T5ZVStMXXKo8SWNIhh_0S0eFRX2h0FpsET3kPEKhfkK66ok-EIQegWGB-BArzyVm4zOf2pnCrRKYBkjbDJzFdBrT1YeSM7m-2X9N4Wi6PemupPvvQFlBBqT8lX0SC0A3BPoUDhHqBUDXqDpgz2hK8CJDCaCSvZdRVMFhmm0UCSv3gpoTzXj4gwuKWJQYDILn8x3B7V2-SRGP8-F3yLaxfqKeN1apEtsg-PyU9ckrcmlz_WgdAMSlfXM1vH_s0co1jOUjUrI8U9bgUuZKOFgruVMg0qMrE8sSSTZgNXcQXQxMlYm0eNOkyf3fZVEENnXWevDkR3GqWk3LSA1oZggDuVv4ka2Wgc3K5H6-HSBd8gwJW2spQxoE3fPqOJp6bGEKwZuNPIj4epCXBdPjPxFrdD7ZOEyVHCExx0hnT0Av-FVv6xeGdaehCCXfZC465sar1XbiPMSuzBv-g3FxlH1DeROx5v1yfnFl8C8MsxY-k2hExah9dSsMGlDiQtowL6i7huELSQ8PFBIubqbQIVNzthvdwvWXlDl1K6lQ2_jbJLOvLorQv-6PbgkOFACQZ_zCzdfq0GCLSHv8D2eFMMv8voIG/w140-h140-p/admin.jpg" alt=""/>
                                     </div>
                                     <div className="ml-3">
                                         <p className="text-sm font-medium text-white">
-                                            Tom Cook
+                                            Anuz Pandey
                                         </p>
                                         <p className="text-xs font-medium text-indigo-200 group-hover:text-white">
                                             View profile
