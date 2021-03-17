@@ -1,5 +1,5 @@
 import * as api from '../../api';
-import { ADD_NEWSLETTER, CLEAR_NEWSLETTER, GET_POST_BY_ID, GET_POSTS } from "../types";
+import { ADD_NEWSLETTER, CLEAR_NEWSLETTER, CLEAR_POST_BY_ID, GET_POST_BY_ID, GET_POSTS } from "../types";
 
 /* ---------------------------------------------------------
                           POSTS
@@ -14,6 +14,13 @@ export const getPostById = (id) => {
     return {
         type: GET_POST_BY_ID,
         payload: api.getPostById(id)
+    }
+}
+
+export const clearPostById = () => {
+    return {
+        type: CLEAR_POST_BY_ID,
+        payload: {}
     }
 }
 

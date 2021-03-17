@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import Moment from "react-moment";
 
 import NewsLetter from "../utils/newsLetter";
-import { getPostById } from "../../store/actions";
+
+import { clearPostById, getPostById } from "../../store/actions";
+import { showToast } from "../utils/tools";
 
 const Article = (props) => {
 
@@ -14,10 +16,33 @@ const Article = (props) => {
         dispatch(getPostById(props.match.params.id));
     }, [dispatch, props.match.params.id]);
 
+    useEffect(() => {
+        if (article.articleById === '404') {
+            console.log('404');
+            showToast('error', 'The requested page does not exists.');
+            props.history.push('/');
+        }
+    }, [article, props.history])
+
+    useEffect(() => {
+        return () => {
+            dispatch(clearPostById());
+        }
+    }, [dispatch])
+
     return (
         <>
             <div className="flex flex-col w-0 flex-1 overflow-hidden">
                 <main className="flex-1 relative overflow-y-auto focus:outline-none">
+                    <button
+                        type="button"
+                        onClick={()=>{props.history.push('/')}}
+                        className="fixed right-10 bottom-5 inline-flex items-center p-2 border border-transparent rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    >
+                        <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                        </svg>
+                    </button>
 
                     {
                         article.articleById ?

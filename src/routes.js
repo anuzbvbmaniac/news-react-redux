@@ -8,6 +8,8 @@ import Header from "./components/header";
 import MainLayout from "./hoc/main_layout";
 import Article from "./components/posts";
 
+import './styles/tailwind.css';
+
 const Routes = () => (
     <BrowserRouter>
         <MainLayout>
